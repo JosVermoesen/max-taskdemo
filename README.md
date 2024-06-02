@@ -1,10 +1,10 @@
-# Essentials
+# Max-Taskdemo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+This project is on [Angular CLI](https://github.com/angular/angular-cli) version 18 with node 20.14
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -14,14 +14,26 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Angular and upgrading
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This app is on Angular 17. Update to latest Angular 11 with:
+`ng update @angular/cli@17 @angular/core@17`
 
-## Running end-to-end tests
+Follow the instructions eventualy for fixes
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## From Angular 10+ warnings
 
-## Further help
+In angular.json, to avoid CommonJs warnings, add **allowedCommonJsDependencies** in the options section for **qrcode**:
+
+```bash
+"builder": "@angular-devkit/build-angular:browser",
+          "options": {
+
+            "allowedCommonJsDependencies": [
+              "qrcode",
+              "url"
+            ],
+
+```
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
