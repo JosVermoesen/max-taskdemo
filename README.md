@@ -16,8 +16,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ### Angular and upgrading
 
-This app is on Angular 17. Update to latest Angular 11 with:
-`ng update @angular/cli@17 @angular/core@17`
+This app is on Angular 18. Update to latest Angular 18 with:
+`ng update @angular/cli@18 @angular/core@18`
 
 Follow the instructions eventualy for fixes
 
