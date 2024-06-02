@@ -14,6 +14,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+### Install and update the frameworks
+
+- [Install NodeJS](https://nodejs.org/). Hint: eventually install and use [nvm](https://medium.com/@Joachim8675309/installing-node-js-with-nvm-4dc469c977d9) for easy installing and/or switching between node versions
+- [Angular 18 CLI](https://www.npmjs.com/package/@angular/cli): `npm i -g @angular/cli`
+
 ### Angular and upgrading
 
 This app is on Angular 18. Update to latest Angular 18 with:
