@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 
-import { HeaderComponent } from './header/header.component';
-import { UserComponent } from './user/user.component';
 import { DUMMY_USERS } from './dummy-users';
-import { TasksComponent } from "./tasks/tasks.component";
 
 @Component({
-    selector: 'app-root',
+    selector: 'app-root',    
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [HeaderComponent, UserComponent, TasksComponent]
+    standalone: false,
+    // imports: [HeaderComponent, UserComponent, TasksComponent]
+    // when switching to not standalone mode, the imports are not needed
+    // because the components are already imported in the app.module.ts
+    // and are available in the app.component.ts    
 })
 export class AppComponent {
   users = DUMMY_USERS;
