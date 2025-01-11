@@ -10,6 +10,7 @@ import { TaskComponent } from './tasks/task/task.component';
 import { NewTaskComponent } from './tasks/new-task/new-task.component';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
+import { TasksModule } from './tasks/tasks.module';
 
 @NgModule({
   declarations: [
@@ -17,9 +18,9 @@ import { SharedModule } from './shared/shared.module';
     HeaderComponent,
     UserComponent,
     // CardComponent,
-    TasksComponent,
-    TaskComponent,
-    NewTaskComponent,
+    // TasksComponent,
+    // TaskComponent,
+    // NewTaskComponent,
   ], // Without standalone modus add HeaderComponent, UserComponent, and TasksComponent to the declarations array
   bootstrap: [AppComponent],
   imports: [
@@ -27,8 +28,8 @@ import { SharedModule } from './shared/shared.module';
     // HeaderComponent,
     // UserComponent,
     // TasksComponent
-    FormsModule,
-    SharedModule
+    SharedModule,
+    TasksModule,
   ],
 })
 export class AppModule {}
